@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class Routing_page_controller extends Controller{
     //Routing page
     public function index(){
-        return view('routing_page');
+        return view('Page_router_view');
         }
     /**
      * Routing paths
