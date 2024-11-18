@@ -17,7 +17,7 @@ class Routing_page_controller extends Controller{
         }
 
     public function routing_path_tax_math(){
-        return redirect()->route("tax_deduction_calculation.index");
+        return redirect()->route("Tax_deduction_calculation.index");
         }
 
     public function routing_path_compound_interest(){
@@ -25,7 +25,7 @@ class Routing_page_controller extends Controller{
         }
 
     public function routing_path_down_payment(){
-        return redirect()->route("down_payment_calculation.index");
+        return redirect()->route("Down_payment_calculation.index");
         }
 
     }
