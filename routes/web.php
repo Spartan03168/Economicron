@@ -13,7 +13,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Routing of the created views
+// ---- Routing of the created views ----
 Route::get("/", [Homepage_controller::class, "index"]) ->name("homepage.index");
 Route::get("/routing", [Routing_page_controller::class, "index"])-> name("routing.index");
 Route::get("/Tax-calculations", [Tax_deduction_controller::class, "index"]) -> name("Tax_deduction_calculation.index");
