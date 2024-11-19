@@ -9,7 +9,7 @@
         html {
             height: 100%;
             background-color: black;
-        }
+            }
 
         body {
             margin: 0;
@@ -17,18 +17,18 @@
             height: 100%;
             color: white;
             font-family: Arial, sans-serif;
-            background-image: url("C:/Users/Tomy/Pictures/Wallpapers/Money.png");
+            background-image: url("{{ asset('Money.png') }}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
+            }
         /* Styling for the header */
         header {
             color: white;
             padding: 10px 20px;
             font-size: 24px;
             text-align: left;
-        }
+            }
         /* Button styling */
         .button {
             background-color: green;
@@ -42,13 +42,13 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 12px;
-        }
+            }
         /* text box */
         .text-box {
             background-color: black;
             padding: 20px;
             margin: 20px;
-        }
+            }
         /* Box containment for buttons */
         .button-containment {
             display: flex;
@@ -56,7 +56,7 @@
             align-items: center;
             padding: 20px;
             width: 100%;
-        }
+            }
         .vertical-framing {
             background-color: green;
             color: white;
@@ -67,10 +67,10 @@
             border-radius: 5px;
             width: 80%;
             transition: background-color 0.3s;
-        }
+            }
         .vertical-framing:hover {
             background-color: #367B37;
-        }
+            }
     </style>
 </head>
 
@@ -87,22 +87,31 @@
 <!-- Routing links as buttons -->
 <div class="button-containment">
     <!-- Detailed list of features -->
-    <!-- Saving calculator routinig -->
-    <button class="vertical-framing">
-        Savings calculator
-    </button>
+    <!-- Saving calculator routing -->
+    <form action="{{route('Savings_math.index')}}" method="get">
+        <button class="vertical-framing">
+            Savings calculator
+        </button>
+    </form>
     <!-- Tax calculations routing -->
-    <button class="vertical-framing">
-        Tax calculations
-    </button>
+    <form action="{{route('Tax_deduction_calculation.index')}}" method="get">
+        <button class="vertical-framing">
+            Tax calculations
+        </button>
+    </form>
     <!-- Compound interest routing -->
-    <button class="vertical-framing">
-        Compound interest
-    </button>
+    <form action="{{route('Compound_interest.index')}}" method="get">
+        <button class="vertical-framing">
+            Compound interest
+        </button>
+    </form>
     <!-- Down payment calculations routing -->
-    <button class="vertical-framing">
-        Down payments calculatons
-    </button>
+    <form action="{{route('Down_payment_calculation.index')}}" method="get">
+        <button class="vertical-framing">
+            Down payments calculations
+        </button>
+    </form>
+
 </div>
 
 </body>

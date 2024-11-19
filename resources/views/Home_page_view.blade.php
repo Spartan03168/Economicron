@@ -9,18 +9,18 @@
         html {
             height: 100%;
             background-color: black;
-        }
+            }
         /* Background logic */
         div {
             margin: 0;
             padding: 0;
-            background-image: url("file:///C:/Users/Tomy/Pictures/Wallpapers/pngtree-sci-fi-technology-grid-rays-background-picture-image_2207344.jpg");
+            background-image: url("{{ asset("pngtree-sci-fi-technology-grid-rays-background-picture-image_2207344.jpg") }}}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
             position: relative;
-        }
+            }
         /* Black baseline background */
         .overlay {
             position: absolute;
@@ -31,7 +31,7 @@
             background-color: #000000;
             z-index: 1;
             opacity: 0.13;
-        }
+            }
         header {
             color: white;
             text-align: center;
@@ -42,12 +42,12 @@
             position: absolute;
             z-index: 2;
             font-size: 50px;
-        }
+            }
         /* Header hover logic */
         header:hover {
             color: #00bfff;
             transform: translateX(-50%) translateY(-5px);
-        }
+            }
 
         /* Button logic */
         .toggle-button {
@@ -62,10 +62,10 @@
             font-size: 16px;
             border-radius: 5px;
             z-index: 3;
-        }
+            }
         .toggle-button:hover {
             background-color: rgba(0, 0, 0, 0.7);
-        }
+            }
 
         /* Rediect to logistical page button styling */
         .logistic-redirect {
@@ -85,14 +85,14 @@
             text-decoration: none;
             display: inline-block;
             outline: none;
-        }
+            }
         /* Center button hovering */
         .logistic-redirect:hover .logistic-redirect:focus .logistic-redirect:active {
             transform: translate(-50%, -50%) translateY(-10px);
             text-decoration: none;
             color: white;
             outline: none;
-        }
+            }
     </style>
 </head>
 <body>
@@ -106,7 +106,7 @@
     <!-- Integration of button -->
     <button class="toggle-button" onclick="dark_mode()">Dark mode activation</button>
     <!-- Redirect to logistical routing page -->
-    <a href="Routing_page.html" class="logistic-redirect">
+    <a href="{{route('routing.index')}}" class="logistic-redirect">
         Enter
     </a>
 
