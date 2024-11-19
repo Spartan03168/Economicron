@@ -10,7 +10,7 @@
             height: 100%;
             background-color: black;
             }
-
+        /* Background wallpaper calibration */
         body {
             margin: 0;
             padding: 0;
