@@ -14,7 +14,7 @@
         div {
             margin: 0;
             padding: 0;
-            background-image: url("{{ asset("pngtree-sci-fi-technology-grid-rays-background-picture-image_2207344.jpg") }}}");
+            background-image: url("{{ asset("pngtree-sci-fi-technology-grid-rays-background-picture-image_2207344.jpg") }}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
