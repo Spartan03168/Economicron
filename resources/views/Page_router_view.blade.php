@@ -29,7 +29,7 @@
             font-size: 24px;
             text-align: left;
             }
-        /* Button styling */
+        /* Button styling(Dormant and unused) */
         .button {
             background-color: green;
             border: none;
